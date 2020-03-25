@@ -1,0 +1,103 @@
+body {
+	background-image: url(../Images/MGbackground.png);
+
+}
+
+/* @font-face {
+	font-family: 'HP';
+	src: url(../ParryHotter.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Parsel';
+	src: url(../parsel.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Lumos';
+	src: url(../WizardsMagic.ttf) format('truetype'); */
+/* } */
+
+h1 {
+	font-family: 'HP';
+	/* float: left; */
+	color: white;
+	font-size: 50px;
+	margin: 20px;
+	line-height: 150%;
+	opacity: 0.9;
+}
+
+p {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+.houses {
+	width: 100px;
+}
+
+.character {
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	font-family: serif;
+}
+
+.hero {
+	background-color: #FFF880;
+}
+
+.fighting {
+	background-color: #FF534F;
+}
+
+#picking {
+	opacity: 0.9;
+	background-color: black;
+	width: 800px;
+	height: 250px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.theCenter {
+	margin: 0 auto;
+	padding: 30px;
+}
+
+#attack {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	background-color: red;
+}
+
+#restart {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	background-color: darkblue;
+}
+
+#whathappens {
+	background-color: #99b4c7;
+	font-family: sans-serif;
+}
+
+#winsloses {
+	background-color: black;
+	opacity: 0.9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+	padding: 20px;
+	color: white;
+}

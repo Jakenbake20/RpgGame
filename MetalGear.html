@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metal Gear RPG</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container-fluid">
+<h1 class="text-center">Metal Gear<br>&nbsp;&nbsp;&nbsp;&nbsp;Tactical Battle</h1>
+	<p class="text-center">Fight against the evil forces of Shadow Moses</p>
+<div id="winsloses" class="text-center">Victories: 0 &nbsp;&nbsp;Defeats: 0</div>
+	<div class="row">
+		<h2 id="todo" class="text-center"></h2>
+		<div id="picking" class="text-center"></div>
+	</div>
+	<div class="row theCenter text-center">
+		<div id="myguy" class="col-md-4"></div>
+		<div class="col-md-4">
+			<button id="attack" type="button" class="btn btn-danger" value=attack>Attack</button><br><br>
+			<button id="restart" type="button" class="btn btn-info" value=restart>Restart</button><br><br>
+			<div id="whathappens"></div><br>
+		</div>
+		<div id="enemy" class="col-md-4"></div>
+	</div>
+</div>
+
+<script src="java.js" type="text/javascript">
+</script>
+
+</body>
+</html>
