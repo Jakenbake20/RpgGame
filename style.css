@@ -3,24 +3,9 @@ body {
 
 }
 
-/* @font-face {
-	font-family: 'HP';
-	src: url(../ParryHotter.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'Parsel';
-	src: url(../parsel.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'Lumos';
-	src: url(../WizardsMagic.ttf) format('truetype'); */
-/* } */
 
 h1 {
 	font-family: 'HP';
-	/* float: left; */
 	color: white;
 	font-size: 50px;
 	margin: 20px;
@@ -40,7 +25,7 @@ h2 {
 	color: white;
 }
 
-.houses {
+.cards {
 	width: 100px;
 }
 

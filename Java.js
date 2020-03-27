@@ -10,19 +10,19 @@ $(document).ready(function() {
 		choices = [];
 		enemyArray = [ {
 			id: 0,
-			name: "SolidSnake",
+			name: "Solid"+" "+"Snake",
 			pic: '../Images/SolidSnake.jpg',
 			hitPoints: 150,
 			attackPower: 5
 		}, {
 			id: 1,
-			name: "LiquidSnake",
+			name: "Liquid"+" "+"Snake",
 			pic: '../Images/LiquidSnake.jpg',
 			hitPoints: 100,
 			attackPower: 25 		
 		}, {
 			id: 2,
-			name: "RevolverOcelot",
+			name: "Revolver"+" "+"Ocelot",
 			pic: '../Images/RevolverOcelot.jpg',
 			hitPoints: 120,
 			attackPower: 19 
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 		for(var i = 0; i < enemyArray.length; i++) {
 			choices += "<div id=" + enemyArray[i].id + " class='btn character text-center' value=" + enemyArray[i].id +
-			"><img class='houses' src=" + enemyArray[i].pic + " alt=" + enemyArray[i].name + "><br> HP: " + enemyArray[i].hitPoints +
+			"><img class='cards' src=" + enemyArray[i].pic + " alt=" + enemyArray[i].name + "><br> HP: " + enemyArray[i].hitPoints +
 			"<br> AP: " + enemyArray[i].attackPower + " </div>";
 		}
 
@@ -54,18 +54,18 @@ $(document).ready(function() {
 
 		attachCharacterOnClick();
 	}
-
+//sets functions for characters picked
 	function printCharacters() {
 		var hero = "<div id=" + enemyArray[myChar].id + " class='btn character text-center hero' value=" + enemyArray[myChar].id +
-			"><img class='houses' src=" + enemyArray[myChar].pic + " alt=" + enemyArray[myChar].name + "><br> HP: " + enemyArray[myChar].hitPoints +
+			"><img class='cards' src=" + enemyArray[myChar].pic + " alt=" + enemyArray[myChar].name + "><br> HP: " + enemyArray[myChar].hitPoints +
 			"<br> AP: " + enemyArray[myChar].attackPower + " </div>";
 		var badguy = "<div id=" + enemyArray[opponentChar].id + " class='btn character text-center fighting' value=" + enemyArray[opponentChar].id +
-			"><img class='houses' src=" + enemyArray[opponentChar].pic + " alt=" + enemyArray[opponentChar].name + "><br> HP: " + enemyArray[opponentChar].hitPoints +
+			"><img class='cards' src=" + enemyArray[opponentChar].pic + " alt=" + enemyArray[opponentChar].name + "><br> HP: " + enemyArray[opponentChar].hitPoints +
 			"<br> AP: " + enemyArray[opponentChar].attackPower + " </div>";
 		$('#myguy').html(hero);
 		$('#enemy').html(badguy);
 	}
-
+//creates a box narrating the match. 
 	function whatHappens() {
 		var description = "You attack " + enemyArray[opponentChar].name + " for " + enemyArray[myChar].attackPower + " damage!<br>" +
 			enemyArray[opponentChar].name + " counter attacks for " + enemyArray[opponentChar].attackPower + " damage!<br>" +
@@ -96,7 +96,7 @@ $(document).ready(function() {
 			}
 		});
 	}
-
+//Battle functions
 	$('#attack').on("click", function() {
 		if(!haveCharacter) {
 			$('#whathappens').html("You need to pick your house first!");
@@ -118,7 +118,7 @@ $(document).ready(function() {
 					$("#todo").html("Who will you fight next?");
 					haveAttacker = false;
 				}
-				else {
+				else { //win alert
 					whatHappens();
 					alert("You win! Keep fighting for your cause!");
 					wins++;
@@ -127,7 +127,7 @@ $(document).ready(function() {
 				}
 				
 			}
-			else if(enemyArray[myChar].hitPoints < 0) {
+			else if(enemyArray[myChar].hitPoints < 0) { //loss alert
 				whatHappens();
 				alert("Snake?! Snake?! SNAAAAAAKE!!!!");
 				loses++;
